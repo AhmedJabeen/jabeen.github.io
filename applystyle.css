@@ -134,113 +134,145 @@ a:hover {
 /* MAIN CONTENT */
 
 
-
-* {
+ 
+  * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
-  
-  input[type=text], select, textarea {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  .formbold-mb-3 {
+    margin-bottom: 15px;
+  }
+
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px;
+
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 570px;
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+    background: white;
+    padding: 50px;
+    border-style: solid;
+    border-color: #3a3a3a;
   }
-  
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
+
+  .formbold-img {
+    display: block;
+    margin: 0 auto 45px;
   }
-  
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
+
+  .formbold-input-wrapp > div {
+    display: flex;
+    gap: 20px;
   }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
+
+  .formbold-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
   }
-  
-  .container {
+  .formbold-input-flex > div {
+    width: 50%;
+  }
+  .formbold-form-input {
+    width: 100%;
+    padding: 13px 22px;
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #536387;
+    outline: none;
+    resize: none;
   }
-  
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 26px;
-  }
-  
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 26px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 26;
-    }
+  .formbold-form-input::placeholder,
+  select.formbold-form-input,
+  .formbold-form-input[type='date']::-webkit-datetime-edit-text,
+  .formbold-form-input[type='date']::-webkit-datetime-edit-month-field,
+  .formbold-form-input[type='date']::-webkit-datetime-edit-day-field,
+  .formbold-form-input[type='date']::-webkit-datetime-edit-year-field {
+    color: rgba(83, 99, 135, 0.5);
   }
 
-  /* FILE SUBMIT BUTTON */
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  .formbold-form-label {
+    color: #07074D;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+  }
 
-  .button {
-    background-color: #ffae00;
-    border: none;
-    color: white;
-    padding: 10px 18px;
-    text-align: center;
-    text-decoration: none;
+  .formbold-form-file-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .formbold-form-file-flex .formbold-form-label {
+    margin-bottom: 0;
+  }
+  .formbold-form-file {
+    font-size: 14px;
+    line-height: 24px;
+    color: #536387;
+  }
+  .formbold-form-file::-webkit-file-upload-button {
+    display: none;
+  }
+  .formbold-form-file:before {
+    content: 'Upload file';
     display: inline-block;
+    background: #EEEEEE;
+    border: 0.5px solid #FBFBFB;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding: 3px 12px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    color: #637381;
+    font-weight: 500;
     font-size: 12px;
-    cursor: pointer;
-    margin-left: 1370px;
-    margin-top: 10px;
-    transition: all 0.5s;
-  }
-  
-.button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
+    line-height: 16px;
+    margin-right: 10px;
   }
 
+  .formbold-btn {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #ffae00;;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 350px;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-w-45 {
+    width: 45%;
+  }
 
   /* Footer */
 
