@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="applystyle.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="favicon.png" >
-
 </head>
 <body>
 
-  <div class="container">
-    <div class="nav">
+     <div class="nav">
         <nav>
           
             <div class="navlogo">
@@ -34,12 +32,6 @@
           
             
 
-                <div class="search-box">
-                    <form>
-                        <input type="text" name="search" id="srch" placeholder="Search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
                 <div class="menu">
                     <label for="chk1">
                         <i class="fa fa-bars"></i>
@@ -47,142 +39,151 @@
                 </div>
 
         </nav>
-        
-        <div><img src="intro.jpg" alt="test" style="width:200;height:200; ">
-    </div>
+         
+         <div class="formbold-main-wrapper">
 
+  <div class="formbold-form-wrapper">
 
-
-        <div class="container">
-        <form action="/action_page.php">
-
-          <div class="row">
-
-            <div class="col-25">
-              <label for="fname">First Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            </div>
-          </div>
-        
-          
-          <div class="row">
-            <div class="col-25">
-              <label for="lname">Last Name</label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-25">
-          <label for="fname">Email Address</label>
+      <div class="formbold-input-flex">
+        <div>
+          <label for="firstname" class="formbold-form-label"> First Name </label>
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="e.g: John"
+            class="formbold-form-input"
+          />
         </div>
-        <div class="col-75">
-          <input type="text" id="fname" name="emailaddress" placeholder="Enter your email here...">
+
+        <div>
+          <label for="lastname" class="formbold-form-label"> Last Name </label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="e.g: Cena"
+            class="formbold-form-input"
+          />
         </div>
       </div>
 
+      <div class="formbold-input-flex">
+        <div>
+            <label for="email" class="formbold-form-label"> Email </label>
+            <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@email.com"
+            class="formbold-form-input"
+            />
+        </div>
 
-      <div class="row">
-        <div class="col-25">
-      <label for="fname">Date of Birth</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="fname" name="dateofbirth" placeholder="DOB (dd/mm/yyyy)">
-    </div>
-  </div>
+        <div>
+            <label class="formbold-form-label">Gender</label>
 
-
-  <div class="row">
-    <div class="col-25">
-  <label for="fname">Phone Number<br>
-                     (optional)</label>
-</div>
-<div class="col-75">
-  <input type="text" id="fname" name="firstname" placeholder="Enter your phone number here...">
-</div>
-</div>
-
-<div class="row">
-    <div class="col-25">
-  <label for="fname">Address Line 1</label>
-</div>
-<div class="col-75">
-  <input type="text" id="fname" name="firstname" placeholder="Enter your address here...">
-</div>
-</div>
-
-<div class="row">
-    <div class="col-25">
-  <label for="fname">Address Line 2</label>
-</div>
-<div class="col-75">
-  <input type="text" id="fname" name="firstname" placeholder="Enter your address here...">
-</div>
-</div>
-
-<div class="row">
-    <div class="col-25">
-  <label for="fname">Postcode</label>
-</div>
-<div class="col-75">
-  <input type="text" id="fname" name="firstname" placeholder="Enter your postcode here...">
-</div>
-</div>
-
-
-          <div class="row">
-            <div class="col-25">
-              <label for="country">Type of Web Developer</label>
-            </div>
-
-            <div class="col-75">
-              <select id="country" name="country">
-                <option value="australia">Front-end</option>
-                <option value="canada">Back-end</option>
-                <option value="usa">Full-stack</option>
-              </select>
-            </div>
-          </div>
-
-
-
-
-
-          <div class="row">
-            <div class="col-25">
-            <label for="subject">Upload your CV</label>
-            <input type="file" id="myFile" name="name" multiple>
-            
-          </div>
-          </div>
-
-
-          <div class="row">
-            <div class="col-25">
-              <label for="subject">Any Message<br>
-                                    (optional)</label>
-            </div>
-
-            <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <a href="goback.html" class="button" style="vertical-align:middle"><span>Submit</span></a>
-          </div>
-
-        </form>
+            <select class="formbold-form-input" name="occupation" id="occupation">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+            </select>
+        </div>
       </div>
 
+      <div class="formbold-mb-3 formbold-input-wrapp">
+        <label for="phone" class="formbold-form-label"> Phone </label>
 
+        <div>
+          <input
+            type="text"
+            name="areacode"
+            id="areacode"
+            placeholder="Area code"
+            class="formbold-form-input formbold-w-45"
+          />
+
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Phone number"
+            class="formbold-form-input"
+          />
+        </div>
+      </div>
+
+      <div class="formbold-mb-3">
+        <label for="age" class="formbold-form-label"> Applying for role: </label>
+        <select class="formbold-form-input" name="occupation" id="occupation">
+            <option value="male">Front-end</option>
+            <option value="female">Back-end</option>
+            <option value="others">Full-stack</option>
+            </select>
+
+      </div>
+
+      <div class="formbold-mb-3">
+        <label for="dob" class="formbold-form-label"> Date of Birth</label>
+        <input type="date" name="dob" id="dob" class="formbold-form-input" />
+      </div>
+
+      <div class="formbold-mb-3">
+        <label for="address" class="formbold-form-label"> Address </label>
+
+        <input
+          type="text"
+          name="address"
+          id="address"
+          placeholder="Street address"
+          class="formbold-form-input formbold-mb-3"
+        />
+        <input
+          type="text"
+          name="address2"
+          id="address2"
+          placeholder="Street address line 2"
+          class="formbold-form-input"
+        />
+      </div>
+
+      <div class="formbold-mb-3">
+        <label for="message" class="formbold-form-label">
+          Any other message?          
+        </label>
+        <textarea
+          placeholder="Enter your message here!"
+          rows="6"
+          name="message"
+          id="message"
+          class="formbold-form-input"
+        ></textarea>
+      </div>
+
+      <div class="formbold-form-file-flex">
+        <label for="upload" class="formbold-form-label">
+          Upload CV
+        </label>
+        <input
+          type="file"
+          name="upload"
+          id="upload"
+          class="formbold-form-file"
+        />
+      </div>
       
-      <div class="footercolor">
+    
+      <a href="goback.html" class="formbold-btn" style="vertical-align:middle"><span>Submit</span></a>
+      
+    </form>
+  </div>
+</div>
+         
+          <div class="footercolor">
         <img src="dcd7ca.png" style="height: 200px; width: 100%;" >
     </div>
+
+
 
     <div class="coursesfooter">
 
@@ -242,11 +243,8 @@
         </div>
 
 
-
-    </div>
-  </div>
-      
-</div>
+    
+    
     
     
     
